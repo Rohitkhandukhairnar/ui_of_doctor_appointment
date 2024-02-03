@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+        <LinearLayout
+            android:id="@+id/fitStart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+            <RelativeLayout
+                android:id="@+id/first"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <ImageView
+                            android:id="@+id/imgDoctor1"
+                            android:layout_width="160dp"
+                            android:layout_height="160dp"
+
+                            android:layout_marginBottom="4dp"
+                            android:src="@drawable/doctor_1" />
+
+
+                        <TextView
+                            android:id="@+id/txtDoctorName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="30dp"
+                            android:layout_toEndOf="@+id/imgDoctor1"
+                            android:text="Dr. Rahul Kataria"
+                            android:textColor="@color/black"
+                            android:textSize="17dp" />
+
+                        <TextView
+                            android:id="@+id/txtSpecialist"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txtDoctorName"
+                            android:layout_toEndOf="@+id/imgDoctor1"
+                            android:text="Cardiologist"
+                            android:textColor="@color/black"
+                            android:textSize="13dp"
+                            tools:ignore="TextSizeCheck" />
+
+                        <RatingBar
+                            android:id="@+id/doctor_rating1"
+                            style="@android:style/Widget.DeviceDefault.Light.RatingBar.Indicator"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txtSpecialist"
+                            android:layout_marginStart="110dp"
+                            android:layout_marginTop="-1dp"
+
+                            android:numStars="5"
+
+                            android:progressTint="@color/yellow"
+
+                            android:rating="4.5"
+                            android:scaleX="0.50"
+                            android:scaleY="0.50"
+                            android:stepSize="0.5" />
+
+                    </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:backgroundTint="@color/doctor_background"
+                android:background="@drawable/border"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginStart="25dp"
+                    android:id="@+id/f1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="122"
+                    android:textSize="30dp"/>
+                <TextView
+                    android:id="@+id/f2"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_below="@id/f1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Patients"
+                    android:textSize="20dp"/>
+                <TextView
+                    android:layout_toEndOf="@id/f1"
+                    android:layout_marginStart="60dp"
+                    android:id="@+id/f3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="6 years"
+                    android:textSize="30dp"/>
+                <TextView
+                    android:id="@+id/f4"
+                    android:layout_below="@id/f3"
+                    android:layout_toEndOf="@id/f1"
+                    android:layout_marginStart="60dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="Experience"
+                    android:textSize="20dp"/>
+                <TextView
+                    android:layout_toEndOf="@id/f3"
+                    android:layout_marginStart="80dp"
+                    android:id="@+id/f5"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:text="8"
+                    android:textSize="30dp"/>
+                <TextView
+                    android:layout_below="@id/f5"
+                    android:layout_toEndOf="@id/f4"
+                    android:layout_marginStart="60dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="Certification"
+                    android:textSize="20dp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+
+                android:id="@+id/second"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp">
+                <TextView
+                    android:id="@+id/txt1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Biografhy"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="15dp"/>
+
+                <TextView
+                    android:id="@+id/txt2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt1"
+                    android:layout_marginStart="13dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Dr. Rahul Kataria a distinguished cardiologist, possesses an unparalleled commitment to cardiac care. With years of expertise, he skillfully navigates complex cardiac conditions with precision and compassion. Patients trust in his adept diagnosis and personalized treatment plans, fostering a sense of assurance and well-being. Dr. Rahul's dedication to advancing cardiovascular health leaves an indelible mark on the medical field."
+                    android:textColor="@color/light_black"
+                    android:textSize="13dp"
+                    tools:ignore="TextSizeCheck" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/third"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <TextView
+                    android:id="@+id/txt3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Working Hours"
+                    android:layout_marginStart="13dp"
+                    android:layout_marginTop="20dp"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"/>
+
+                <RelativeLayout
+                    android:layout_below="@id/txt3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                    <RelativeLayout
+                        android:contextClickable="true"
+                        android:textAlignment="center"
+                        android:id="@+id/r1"
+                        android:background="@drawable/border"
+                        android:layout_marginStart="10dp"
+                        android:layout_width="80dp"
+                        android:layout_height="25dp">
+
+                        <TextView
+                            android:contextClickable="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:text="08:00 AM"
+                            android:textAlignment="center"
+                            android:layout_marginStart="6dp"
+                            android:layout_marginTop="2dp"/>
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_marginStart="20dp"
+                        android:background="@drawable/border"
+                        android:contextClickable="true"
+                        android:id="@+id/r2"
+                        android:layout_toEndOf="@id/r1"
+                        android:layout_width="80dp"
+                        android:layout_height="25dp">
+                        <TextView
+                            android:layout_marginTop="2dp"
+                            android:contextClickable="true"
+                            android:layout_marginStart="6dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="10:00 AM"/>
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_marginStart="20dp"
+                        android:background="@drawable/border"
+                        android:contextClickable="true"
+                        android:layout_toEndOf="@id/r2"
+                        android:id="@+id/r3"
+                        android:layout_width="80dp"
+                        android:layout_height="25dp">
+                        <TextView
+                            android:contextClickable="true"
+                            android:layout_marginStart="6dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="12:00 AM"/>
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+         <RelativeLayout
+             android:id="@+id/forth"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+             <TextView
+                 android:id="@+id/txt4"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:text="Schedule"
+                 android:layout_marginStart="13dp"
+                 android:layout_marginTop="20dp"
+                 android:textSize="20dp"
+                 android:textColor="@color/black"/>
+
+             <RelativeLayout
+                 android:layout_marginTop="15dp"
+                 android:layout_below="@id/txt4"
+                 android:layout_width="match_parent"
+                 android:layout_height="100dp">
+
+                 <RelativeLayout
+                     android:contextClickable="true"
+                     android:layout_marginStart="15dp"
+                     android:layout_marginTop="15dp"
+                     android:background="@drawable/border"
+                     android:id="@+id/re1"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content">
+                     <TextView
+                         android:contextClickable="true"
+                         android:layout_margin="15dp"
+                         android:id="@+id/t1"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="Mon"/>
+                     <TextView
+                         android:contextClickable="true"
+                         android:layout_marginStart="15dp"
+                         android:textSize="25dp"
+                         android:layout_below="@id/t1"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="01"/>
+                 </RelativeLayout>
+                 <RelativeLayout
+                     android:layout_toEndOf="@id/re1"
+                     android:contextClickable="true"
+                     android:layout_marginStart="15dp"
+                     android:layout_marginTop="15dp"
+                     android:background="@drawable/border"
+                     android:id="@+id/re2"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content">
+                     <TextView
+                         android:contextClickable="true"
+                         android:layout_margin="15dp"
+                         android:id="@+id/t2"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="Tue"/>
+                     <TextView
+                         android:contextClickable="true"
+                         android:layout_marginStart="15dp"
+                         android:textSize="25dp"
+                         android:layout_below="@id/t2"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="02"/>
+                 </RelativeLayout>
+                 <RelativeLayout
+                     android:layout_toEndOf="@id/re2"
+                     android:contextClickable="true"
+                     android:layout_marginStart="15dp"
+                     android:layout_marginTop="15dp"
+                     android:background="@drawable/border"
+                     android:id="@+id/re3"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content">
+                     <TextView
+                         android:contextClickable="true"
+                         android:layout_margin="15dp"
+                         android:id="@+id/t3"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="Wen"/>
+                     <TextView
+                         android:contextClickable="true"
+                         android:layout_marginStart="15dp"
+                         android:textSize="25dp"
+                         android:layout_below="@id/t3"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="03"/>
+                 </RelativeLayout>
+                 <RelativeLayout
+                     android:layout_toEndOf="@id/re3"
+                     android:contextClickable="true"
+                     android:layout_marginStart="15dp"
+                     android:layout_marginTop="15dp"
+                     android:background="@drawable/border"
+                     android:id="@+id/re4"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content">
+                     <TextView
+                         android:contextClickable="true"
+                         android:layout_margin="15dp"
+                         android:id="@+id/t4"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="Thu"/>
+                     <TextView
+                         android:contextClickable="true"
+                         android:layout_marginStart="15dp"
+                         android:textSize="25dp"
+                         android:layout_below="@id/t4"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="04"/>
+                 </RelativeLayout>
+                 <RelativeLayout
+                     android:layout_toEndOf="@id/re4"
+                     android:contextClickable="true"
+                     android:layout_marginStart="15dp"
+                     android:layout_marginTop="15dp"
+                     android:background="@drawable/border"
+                     android:id="@+id/re5"
+                     android:layout_width="55dp"
+                     android:layout_height="wrap_content">
+                     <TextView
+                         android:textAlignment="center"
+                         android:contextClickable="true"
+                         android:layout_margin="15dp"
+                         android:id="@+id/t5"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="Fri"/>
+                     <TextView
+                         android:textAlignment="center"
+                         android:contextClickable="true"
+                         android:layout_marginStart="15dp"
+                         android:textSize="25dp"
+                         android:layout_below="@id/t5"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="05"/>
+                 </RelativeLayout>
+
+             </RelativeLayout>
+
+         </RelativeLayout>
+
+        <Button
+            android:background="@drawable/border"
+            android:contextClickable="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="125dp"
+            android:text="Appointment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
